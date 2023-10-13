@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generate a <br> <span>Strong Password </span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="password">
+            <input type="range" min="4" max="20" name="" id="rangeInput" onchange="getLength()">
+            <p id="selectedValue"></p>
+            <div class="checkBox">
+                <label for="">Upper Case</label><input class="check" type="checkbox" id="uprCaseCheckbox">
+                <label for="">Lower Case</label><input class="check" type="checkbox" name="" id="lowerCaseCheckbox">
+                <label for="">Number</label><input class="check" type="checkbox" id="numberCheckBox">
+                <label for="">Special Symbol</label><input class="check" type="checkbox" id="SymCheckBox">
+            </div>
+           
+            <img src="images/copy.png" alt="" onclick="copyPass()">
+        </div>
+        <button onclick="createPassword()">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
